@@ -165,27 +165,51 @@
                 </div>
 
                 <div id="main">
-                    
-<div id="archives">
-    
-    <a-timeline>
-        <a-timeline-item timestamp="2023/2/18" placement="top" color="#a5c2f5">
-            <a-card hoverable>
-                <div class="item-time">2023/2/18</div>
-                <a href="/2023/02/18/hello-world/">
-                    <h3>Hello World</h3>
-                </a>
-                <div class="info">
-                    
+                     
+<link rel="stylesheet" href="/css/post-body.css">
+<div class="article">
+    <div>
+        <h1> </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <a-icon type="calendar" theme="filled" />
+            </span>
+            2023/3/20
+        </span>
 
-                    
-                </div>
-            </a-card>
-        </a-timeline-item>
-    </a-timeline>
+        
+
+        
+    </div>
+
+    <div class="content" v-pre>
+        <p>title: Day 1 (3.20)</p>
+<h1 id="天气"><a href="#天气" class="headerlink" title="天气"></a>天气</h1><p>晴朗或者也可以说有点阴</p>
+<h1 id="上午小结"><a href="#上午小结" class="headerlink" title="上午小结"></a>上午小结</h1><p>啥也没干就做做物理实验，数学课还跑路了，看宿舍现在就我一个人在，舍友还在上课，课太浪费时间我就跑回来了</p>
+<img src="file:///C:/Users/86156/AppData/Roaming/marktext/images/2023-03-20-11-47-40-aeacd86cdca7a146b019dbc8f29b630.jpg" title="" alt="" width="512">
+
+<p>宿舍有些须狼藉，而且桌子太小了所以决定滚出去学习，一会见！</p>
+<p><img src="C:\Users\86156\AppData\Roaming\marktext\images\2023-03-20-12-12-06-c3690571b15e44c26ec923b0e5279a5.jpg"></p>
+<p>给你们看看路上的坡，我天天万步的罪魁祸首</p>
+<p><img src="C:\Users\86156\AppData\Roaming\marktext\images\2023-03-20-12-12-56-a37daba0b70b7ed2b09046b66500693.jpg"></p>
+<p><img src="C:\Users\86156\AppData\Roaming\marktext\images\2023-03-20-12-13-09-e185c8500ca12d31f8af8105f9c72a9.jpg"></p>
+<p>偶遇一朵不认识名字的花</p>
+<p><img src="C:\Users\86156\AppData\Roaming\marktext\images\2023-03-20-12-15-21-e875ffa6823efc5b5f2f27e9ea43138.jpg"></p>
+<p><img src="C:\Users\86156\AppData\Roaming\marktext\images\2023-03-20-12-14-09-97876d029474aaadfb51fe2255fd5f0.jpg"></p>
+<p>到达目的地准备学习</p>
+
+    </div>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <div id="comment">
+        <div id="gitalk-container">
+        </div>
+    </div>
     
 </div>
-
                      
 <footer id="footer">
     <div class="footer-wrap">
@@ -248,6 +272,21 @@
             }
         }
     })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: 'hexo-theme-particle',      // The repository of store comments,
+        owner: 'korilin',
+        admin: ['korilin'],
+        language: 'en',
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: true  // Facebook-like distraction free mode
+    })
+    gitalk.render('gitalk-container')
 </script>
 
 </body>
